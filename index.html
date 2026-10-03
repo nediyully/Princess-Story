@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1728"><meta name="description" content="Một cuốn sách cổ tích dành tặng công chúa của anh.">
+<title>Công chúa và ngọn nến thứ hai mươi ba</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body data-state="closed">
+<div class="starlight" aria-hidden="true"></div>
+<header><span class="small-star" aria-hidden="true">✧</span><span>MỘT CÂU CHUYỆN DÀNH RIÊNG CHO EM</span><span class="small-star" aria-hidden="true">✧</span></header>
+<main id="experience">
+<section id="opening" aria-label="Bìa sách">
+<div class="cover-scene"><button id="cover" class="cover" disabled aria-label="Mở câu chuyện">
+<span class="cover-border"><span class="eyebrow">MỘT CHUYỆN CỔ TÍCH</span><span class="ornament" aria-hidden="true">✧</span><span id="cover-title" class="cover-title">Công chúa<br>và ngọn nến<br><em>thứ hai mươi ba</em></span><span class="cover-rule" aria-hidden="true"></span><span id="dedication">Dành tặng công chúa của anh</span><span class="cover-number" aria-hidden="true">XXIII</span></span>
+</button></div>
+<p class="opening-hint" id="opening-hint">Đang chuẩn bị cuốn sách…</p>
+</section>
+<section id="viewer" hidden aria-label="Cuốn sách hoạt hình">
+<div class="book-topline"><span id="book-title">Công chúa và ngọn nến thứ hai mươi ba</span><span aria-hidden="true">✧</span></div>
+<div class="open-book" id="book"><div class="page-rim" aria-hidden="true"></div><div class="paper"><canvas id="picture" width="960" height="720" role="img" aria-label="Tranh minh họa câu chuyện"></canvas><div class="page-footer"><span>DÀNH TẶNG CÔNG CHÚA CỦA ANH</span><span id="frame-number">1 / 1716</span></div></div></div>
+<div class="playback">
+<div class="timeline"><span id="elapsed">0:00</span><input id="progress" type="range" min="0" max="1715" value="0" step="1" aria-label="Tua câu chuyện"><span id="duration">2:23</span></div>
+<div class="controls"><button id="previous" title="Trang trước (phím mũi tên trái)" aria-label="Trang trước">‹</button><button id="play" class="primary">Phát</button><button id="next" title="Trang sau (phím mũi tên phải)" aria-label="Trang sau">›</button><button id="replay">Xem lại từ đầu</button><label class="speed-label">Tốc độ <select id="speed" aria-label="Tốc độ khung hình"><option value="6">6 khung/giây</option><option value="12" selected>12 khung/giây</option><option value="18">18 khung/giây</option><option value="24">24 khung/giây</option></select></label><button id="fullscreen" hidden>Toàn màn hình</button></div>
+</div>
+</section>
+<section id="ending" hidden aria-label="Lá thư dành cho em"><p class="eyebrow">VÀ MỘT ĐIỀU ANH MUỐN NÓI…</p><button id="envelope" class="envelope"><span class="flap" aria-hidden="true"></span><span class="envelope-message">Gửi công chúa của anh</span><span class="seal" aria-hidden="true">23</span></button><p>Chạm để mở thư</p><div class="ending-actions"><button id="read-letter">Đọc lại thư</button><button id="ending-replay">Xem lại câu chuyện</button></div></section>
+<div class="status-area"><p id="status" role="status" aria-live="polite"></p><button id="retry" hidden>Thử tải lại</button></div>
+<nav class="secondary" aria-label="Truyện và âm nhạc"><button id="read-story" disabled><span aria-hidden="true">▤</span> Đọc câu chuyện</button><div id="music-controls" hidden><button id="music" aria-pressed="true">♫ Nhạc: bật</button><label class="volume-label"><span class="sr-only">Âm lượng nhạc</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.22" aria-label="Âm lượng nhạc"></label></div></nav>
+<p class="closing-note">Mỗi trang nhỏ, một chút yêu thương.</p>
+</main>
+<dialog id="reader" aria-labelledby="reader-title"><div class="reader-header"><span class="eyebrow">NHỮNG TRANG VIẾT CHO EM</span><button id="close-reader" aria-label="Đóng phần đọc">Đóng ✕</button></div><article id="reader-scroll" tabindex="0"><h1 id="reader-title"></h1><div id="reader-text"></div><span class="end-mark" aria-hidden="true">✧</span></article><div class="reader-bottom"><button id="resume" class="primary">Tiếp tục xem</button><button id="letter-replay" hidden>Xem lại câu chuyện</button></div></dialog>
+<audio id="audio" preload="none" loop></audio>
+<noscript>Vui lòng bật JavaScript để mở cuốn sách.</noscript>
+</body></html>
